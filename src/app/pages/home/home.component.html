@@ -1,0 +1,26 @@
+<main class="">
+
+
+<app-header (toggleSidebarEvent)="toggleSidebar()"></app-header>
+
+  <div class="container-fluid main">
+    <div class="row main2">
+      <app-aside class="sidebar col-md-3" [isSidebarExpanded]="isSidebarExpanded" 
+        [ngClass]="{ 'col-md-1': !isSidebarExpanded, 'col-md-3': isSidebarExpanded }"
+        (optionClicked)="closeSidebar()"
+      >
+      </app-aside>
+      
+      <div class="main-content" [ngClass]="{ 'col-lg-11': !isSidebarExpanded, 'col-lg-9': isSidebarExpanded }">
+        <main>
+
+          <router-outlet></router-outlet>
+        </main>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+
+

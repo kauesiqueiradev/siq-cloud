@@ -1,0 +1,98 @@
+[
+    { 
+        "icon": "assets/icons/almoxarifado.png" ,
+        "name": "1. Almoxarifado"
+    },
+    { 
+        "icon": "assets/icons/engenharia.png",
+        "name": "2. Administrativo"
+    },
+    { 
+        "icon": "assets/icons/atendimento-ao-cliente.png" ,
+        "name": "3. Atendimento ao Cliente"
+    },
+    { 
+        "icon": "assets/icons/artes.png" ,
+        "name": "4. Artes"
+    },
+    { 
+        "icon": "assets/icons/compras.png" ,
+        "name": "5. Compras"
+    },
+    { 
+        "icon": "assets/icons/corte.png" ,
+        "name": "6. Corte"
+    },
+    { 
+        "icon": "assets/icons/costura.png" ,
+        "name": "7. Costura"
+    },
+    { 
+        "icon": "assets/icons/desenvolvimento.png" ,
+        "name": "8. Desenvolvimento"
+    },
+    { 
+        "icon": "assets/icons/embalagem.png" ,
+        "name": "9. Embalagem"
+    },
+    { 
+        "icon": "assets/icons/engenharia.png" ,
+        "name": "10. Engenharia"
+    },
+    { 
+        "icon": "assets/icons/espedicao.png" ,
+        "name": "11. Expedição"
+    },
+    { 
+        "icon": "assets/icons/manutencao.png" ,
+        "name": "12. Manutenção"
+    },
+    { 
+        "icon": "assets/icons/pcm.png" ,
+        "name": "13. PCM"
+    },
+    { 
+        "icon": "assets/icons/pcp.png" ,
+        "name": "14. PCP"
+    },
+    { 
+        "icon": "assets/icons/procedimento.png" ,
+        "name": "15. Processos"
+    },
+    { 
+        "icon": "assets/icons/qualidade.png" ,
+        "name": "16. Qualidade"
+    },
+    { 
+        "icon": "assets/icons/rh.png" ,
+        "name": "17. RH"
+    },
+    { 
+        "icon": "assets/icons/seguranca.png" ,
+        "name": "18. Segurança"
+    },
+    { 
+        "icon": "assets/icons/ti.png" ,
+        "name": "19. TI"
+    },
+    { 
+        "icon": "assets/icons/ciclo.png" ,
+        "name": "20. Comum às áreas"
+    },
+    { 
+        "icon": "assets/icons/obsoletos.png" ,
+        "name": "21. Obsoletos"
+    },
+    { 
+        "icon": "assets/icons/fluxograma.png" ,
+        "name": "22. Fluxogramas de processo"
+    },
+    { 
+        "icon": "assets/icons/passadoria.png" ,
+        "name": "23. Passadoria"
+    },
+    { 
+        "icon": "assets/icons/dinheiro.png" ,
+        "name": "23. Sewtech"
+    }
+  ]

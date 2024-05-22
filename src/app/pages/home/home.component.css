@@ -1,0 +1,140 @@
+.home__container {
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 85%;
+    float: right;  
+}
+
+.home__index {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+.home__box {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.home__box a {
+    text-decoration: none;
+    color: black;
+}
+
+.home__box a > div:hover {
+    background-color: #ccc;
+}
+
+.home__card {
+    width: calc(50% - 10px); /* 50% de largura para cada card com 10px de espaço entre eles */
+    margin-bottom: 20px; /* Espaço entre as linhas */
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 100px;
+    max-height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.home__card > img {
+    width: 50px;
+}
+
+.home__card > p {
+    font-weight: 900;
+    text-decoration: none !important;
+}
+
+.home__footer {
+    position: fixed;
+    bottom: 0;
+    width: 68%; 
+    padding: 10px; 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .home__container {
+        align-items: baseline;
+        justify-content: flex-start;
+        margin-top: 2rem;
+        height: auto;
+    }
+
+    .home__card {
+        width: calc(40% - 10px); /* 50% de largura para cada card com 10px de espaço entre eles */
+        margin-bottom: 20px; /* Espaço entre as linhas */
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        box-sizing: border-box;
+        height: 80px;
+        gap: 0.25rem;
+    }
+
+    .home__box > a {
+        width: 20px;
+    }
+
+    .home__card > img {
+        width: 30px;
+    }
+
+    .home__footer {
+        width: auto;
+        padding: 10px 0;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .home__box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 20px; 
+      }
+    
+      .home__card {
+        width: auto; /* Define a largura automática para os cards */
+        max-width: 100%; /* Garante que os cards não excedam a largura máxima */
+      }
+}
+
+/* Para telas grandes (LG) */
+@media only screen and (min-width: 1200px) {
+    .main-lg-expanded {
+      width: calc(100% - 250px); /* Ajusta a largura da main quando o sidebar está expandido */
+    }
+}
+
+/* Para telas médias (MD) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .main-md-expanded {
+      width: calc(100% - 250px); /* Ajusta a largura da main quando o sidebar está expandido */
+    }
+}
+
+/* Para telas pequenas (SM) e extra pequenas (XS) */
+@media only screen and (max-width: 991px) {
+    .main-sm-expanded {
+      width: 100%; /* Ajusta a largura da main quando o sidebar está expandido */
+    }
+}
+
+.fixed-main {
+    position: fixed;
+    transition: width 0.3s ease;
+}

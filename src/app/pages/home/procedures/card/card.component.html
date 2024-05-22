@@ -1,0 +1,45 @@
+<div class="container p-4">
+  
+  <div class="header_card d-flex justify-content-between">
+    <h1 class="card__name fs-6 fs-md-1">Procedimentos do Setor {{ folderName }}</h1>
+    <button (click)="goBackToProcedures()" class="btn btn-primary">Voltar</button>
+  </div>
+
+  <div class="card-details text-center table-responsive overflow-auto">
+    <table>
+      <thead>
+        <tr>
+          <th>Arquivo</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody *ngIf="files && files.length > 0; else noFiles">
+        <tr *ngFor="let file of files" >
+          <td> {{ file.fileName }}</td>
+          <td>
+            <!-- <a (click)="openFile(folderName, file.fileUrl)" target="_blank" class="btn btn-primary">Visualizar</a> -->
+            <a (click)="PreviewInvoice(folderName, file.fileName)" class="btn btn-primary">Visualizar</a>
+          </td>
+
+        </tr>
+      </tbody>
+      <ng-template #noFiles>
+        <tr>
+          <td colspan="2">{{ errorMessage }}</td>
+        </tr>
+      </ng-template>
+    </table>
+</div>
+
+<ng-template #content let-c="close" let-d="dismiss">
+	<div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title"><b>{{selectedFileName}}</b></h4>
+		<button type="button" class="btn-close bg-danger" aria-label="Close" (click)="d('Cross click')"></button>
+	</div>
+	<div class="modal-body">
+        <ngx-extended-pdf-viewer [src]="pdfUrl" height="700px" width="1000px" [textLayer]="true"></ngx-extended-pdf-viewer>
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-danger" (click)="d('Cross click')">Close</button>
+	</div>
+</ng-template>

@@ -1,0 +1,50 @@
+
+<div class="bg">
+    <div class="container d-flex flex-column align-items-center justify-content-center vh-100">
+        <div class="fixed-top color header">
+        </div>
+
+        <div class="d-flex flex-column justify-content-center p-md-3 bg-body rounded col-12 col-xl-6 col">
+            <div class="d-flex justify-content-center">
+                <img class="w-50 mb-5 mt-4" src="assets/logo.png" alt="logo tecnotextil">
+            </div>
+
+            <form class="d-flex flex-column p-1 p-md-3 col-10 col-md-8 mx-auto justify-content-center">
+
+            <h1 class="fs-3 text-center mb-5">SIQ - Sistema Interno de Qualidade</h1>
+            <p class=" text-left">Digite seu CPF ou sua Matricula para Acessar:</p>
+            <div class="mb-3 d-flex gap-1 "> 
+                <!-- <input (input)="onInputChange($event)" (focus)="initKeyboard()" (blur)="closeKeyboard($event)" value ={{value}} type="text" [id]="cpfOrMat" [(ngModel)]="cpfOrMat" name="cpfOrMat" class="form-control" id="exampleInputEmail1" aria-describedby="CPFouMatricula" placeholder="CPF ou Matricula" [ngClass]="{ 'error': cpfOrMatInvalid }"> -->
+                <input 
+                    inputmode="numeric"
+                    
+                    type="text" 
+                    [id]="cpfOrMat" 
+                    [(ngModel)]="cpfOrMat" 
+                    name="cpfOrMat" 
+                    class="form-control" 
+                    id="exampleInputEmail1" 
+                    aria-describedby="CPFouMatricula" 
+                    placeholder="CPF ou Matricula" 
+                    [ngClass]="{ 'error': cpfOrMatInvalid }"
+                >
+           
+                <button (click)="login()" type="submit" class="btn btn-primary color"><i class="bi bi-lock-fill"></i></button>
+            </div>
+            <!-- <div class="simple-keyboard"></div> -->
+            <div *ngIf="cpfOrMatInvalid" class="error-message">Por favor, digite um CPF ou Matricula válido.</div>
+            <br>
+            <div *ngIf="isLoading" class=" text-center loading-spinner">
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Carregando...</span>
+                </div>
+            </div>
+            <br>
+            <div class="mb-3 d-flex justify-content-center mx-autos">
+                <button routerLink="/info" type="submit" class="btn btn-primary color"><i class="bi bi-info-square"></i></button>
+            </div>
+            </form>
+            
+        </div>
+    </div>
+</div>

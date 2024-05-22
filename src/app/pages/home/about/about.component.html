@@ -1,0 +1,40 @@
+<div class="container p-4">
+    <h1 class="fw-semibold fs-3">Fale Conosco</h1>
+    
+    <div class="mb-3">
+      <label for="subject" class="form-label">Assunto</label>
+      <input 
+        
+        type="text" class="form-control p-3" id="subject" [(ngModel)]="subject" placeholder="Assunto do E-mail">
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label" >Mensagem</label>
+      <textarea 
+       
+        type="text"
+        class="form-control p-3" id="message" rows="15" [(ngModel)]="message" placeholder="Digite aqui sua mensagem"></textarea>
+    </div>
+    <div class="text-center w-100">
+      <button class="btn btn-primary fs-3 w-100 btn-lg" (click)="sendEmail()">Enviar E-mail</button>
+    </div>
+
+   
+</div>
+
+<!-- 
+<div class="container">
+  <h1>Dados do Servidor</h1>
+
+ 
+  <div *ngIf="data">
+    <p>ID: {{ data.id }}</p>
+    <p>Nome: {{ data.name }}</p>
+    <p>Descrição: {{ data.description }}</p>
+    
+  </div>
+
+  
+  <div *ngIf="!data">
+    <p>Não foi possível carregar os dados do servidor.</p>
+  </div>
+</div> -->

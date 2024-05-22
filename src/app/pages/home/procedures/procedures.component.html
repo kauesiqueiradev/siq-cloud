@@ -1,0 +1,25 @@
+<div class="">
+    <div class="home__index container p-4">
+        <h1>Procedimentos</h1>
+        <div class="home__box w-100 bs-primary" [style.gridTemplateColumns]="columnsTemplate">
+            <a *ngFor="let folder of folders | paginate: { itemsPerPage: count, currentPage: pag }"  (click)="openCardFolder(folder.name)">
+                <div 
+                    class="home__card" 
+                >
+                  <img [src]="getIconUrl(folder.name)" [alt]="folder.name" class="text-light">
+                  <p>{{ folder.name }}</p>  
+                </div>
+            </a>        
+        </div>
+    
+        <div class="home__footer" >
+            <pagination-controls 
+                class="pg-control"
+                (pageChange)="pag = $event"
+                previousLabel="Anterior"
+                nextLabel="Proximo"
+            ></pagination-controls>
+        </div>
+    </div>
+    
+</div>

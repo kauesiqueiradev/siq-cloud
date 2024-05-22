@@ -1,0 +1,59 @@
+.header {
+    height: 6vh;
+}
+
+.color{ 
+    background-color: var(--color-primary);
+}
+
+
+.bg {
+    background-image: url(../../../assets/bg-login3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: relative;
+}
+
+
+.col{
+    background-color: #f3f3f3 !important;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.34);
+    border-radius: 5% !important;
+}
+
+
+.error{
+    border: 1px solid red;
+}
+
+.simple-keyboard {
+    max-width: 1024px;
+  }
+
+/* mobile*/
+@media screen and (min-width: 480px )
+{
+    
+}
+
+/* tablet*/
+@media screen and (min-width: 768px )  {
+    .login__box {
+        border: 1px solid rgb(0, 0, 0);
+    }
+}
+
+/* laptop*/
+@media screen and (min-width: 1024px )  {
+    
+}
+
+/* desktop*/
+@media screen and (min-width: 1200px )  {
+    
+}
+
+/* tv*/
+@media screen and (min-width: 1201px )  {
+    
+}
