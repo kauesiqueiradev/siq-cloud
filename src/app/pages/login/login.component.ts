@@ -44,5 +44,4 @@ export class LoginComponent{
     this.cpfOrMat = '';
 
   }
-
 }

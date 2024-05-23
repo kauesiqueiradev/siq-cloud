@@ -11,6 +11,7 @@ interface User{
 })
 export class LoginAuthService {
   // private apiUrl = "https://172.16.50.12:9002/rest/ZWS_SRA";
+  // private apiUrl = "https://177.54.187.183:9103/rest/ZWS_SRA";
   private apiUrl = "https://172.16.50.9:9103/rest/ZWS_SRA";
   // http://172.16.50.9:9103/rest
 
